@@ -6,7 +6,7 @@
 
 
     
-<img src="Concepts/Network_Inference.png" width="400">
+<img style="float: center;" src="Concepts/Network_Inference.png" width="400">
 
 <p style="text-align: justify;font-weight: normal;"><font size=3>Graphlet module of PARAGON identifies, an associated region of reference network through substantially frequent graphlets composed of 2-, 3-, and 4-nodes. Each graphlet includes an intermediate node that is the most interacting nodes in the graphlet. Paragon collects the frequent graphlet motifs into GGN. In this way, PARAGON shrinks the size of the network into GGN and eliminates highly connected nodes and their unrelated interactions. <font> <p>
 
