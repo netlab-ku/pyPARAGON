@@ -6,7 +6,7 @@
 
 
 <p align="center">    
-<img " src="Concepts/Network_Inference.png" width="400">
+<img " src="Concept_Figs/Network_Inference.png" width="400">
 <p align="center">
 
 <p align="justify" font-weight="normal"><font size=3>Graphlet module of PARAGON identifies, an associated region of reference network through substantially frequent graphlets composed of 2-, 3-, and 4-nodes. Each graphlet includes an intermediate node that is the most interacting nodes in the graphlet. Paragon collects the frequent graphlet motifs into GGN. In this way, PARAGON shrinks the size of the network into GGN and eliminates highly connected nodes and their unrelated interactions. <font> <p>
@@ -14,7 +14,7 @@
 <p align="justify" font-weight="normal"><font size=3>Independent to the graphlet module, Paragon propagates signals from omic-hits through the personalizaed PageRank algorithm in re-scoring all proteins in the reference. Then, flux calculation weights each edge of the GGN, considering PageRank scores of nodes, confidence scores of edges and the number of node interactions. Finally, Paragon infer the context specific network by selecting the highly scored edges. <font> <p>
 
 <p align="center"> 
-<img src="Concepts/Community__Analysis.png" width="400">
+<img src="Concept_Figs/Community__Analysis.png" width="400">
 <p align="center"> 
 
 <p align="justify" font-weight="normal"><font size=3>Paragon goes beyond network inference by dividing the network into functional units. Community analysis module recruites the louvain community detection method based on network topology. Then, Paragon can identify significant modules by appying hypergeometric test for a given prior knowledge such as biological processes, pathways. <font><p>     
