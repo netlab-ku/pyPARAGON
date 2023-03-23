@@ -1,7 +1,6 @@
-<h1> PARAGON <h1> 
+# PARAGON 
 
-
-<h2> Overview <h2> 
+## Overview  
 
 <p style="text-align: justify;font-weight: normal;"><font size=3> PARAGON (PAgeRAnk-flux on Graphlet-guided network for multi-Omic data integratioN) is a novel method that infers a context specific subnetwork from a given reference network utilizing omic-hits as a initial node set and then identifies significant modules in specific subnetworks. During network inference, Paragon run in three steps:  i. Graphlet-guided network (GGN) construction, ii. Propagation via  Personalized PageRank (PPR) algorithm, iii. Edge scoring and selection via flux calculation. <font> <p> 
 
@@ -17,12 +16,10 @@
     
 <p style="text-align: justify;font-weight: normal;"><font size=3>Paragon goes beyond network inference by dividing the network into functional units. Community analysis module recruites the louvain community detection method based on network topology. Then, Paragon can identify significant modules by appying hypergeometric test for a given prior knowledge such as biological processes, pathways. <font><p>     
 
-<h2> Installation <h2>    
+## Installation 
 <p style="text-align: justify; font-weight: normal;"> <font size=2>
     
-
-
-<h2> Citation <h2>      
+## Citation <h2>      
     
 <p style="text-align: justify; font-weight: normal;"> <font size=2>
 Arici, M.K., Tuncbag, N. Discovering Hidden Connections in Omics Data: an Integrative Modeling Approach for Unveiling Cancer Networks, 2023, in submission <p>
