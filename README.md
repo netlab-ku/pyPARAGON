@@ -17,7 +17,7 @@
 <p align="center"> 
 <img src="Concept_Figs/Community__Analysis.png" width="400">
 <p align="center"> 
-<p align="justify"><font-weight="normal"><font size=> <font-weight="bold">Figure 1:</font-weight> Conceptual view of community analysis in PARAGON <p>
+<p align="justify"><font-weight="normal"><font size=> <font-weight="bold">Figure 2:</font-weight> Conceptual view of community analysis in PARAGON <p>
 
 
 
