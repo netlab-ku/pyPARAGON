@@ -25,8 +25,8 @@
     
 ## Citation <h2>      
     
-<p align="justify" font-weight="normal"><font size=2>
-[^1] Arici, M.K., Tuncbag, N. Discovering Hidden Connections in Omics Data: an Integrative Modeling Approach for Unveiling Cancer Networks, 2023, in submission <p>
+<p align="justify" font-weight="normal"><font size=1>
+Arici, M.K., Tuncbag, N. Discovering Hidden Connections in Omics Data: an Integrative Modeling Approach for Unveiling Cancer Networks, 2023, in submission </p>
 
 
 
