@@ -2,7 +2,7 @@
 
 ## Overview  
 
-<p align="justify"><font-weight="normal"><font size=3> PARAGON (PAgeRAnk-flux on Graphlet-guided network for multi-Omic data integratioN) is a novel method that infers a context specific subnetwork from a given reference network utilizing omic-hits as a initial node set and then identifies significant modules in specific subnetworks. During network inference, PARAGON run in three steps:  i. Graphlet-guided network (GGN) construction, ii. Propagation via  Personalized PageRank (PPR) algorithm, iii. Edge scoring and selection via flux calculation (Figure 1A). <font> </p> 
+<p align="justify"><font-weight="normal"><font size=3> PARAGON (PAgeRAnk-flux on Graphlet-guided network for multi-Omic data integratioN) is a novel method that infers a context specific subnetwork from a given reference network, utilizing omic-hits as a initial node set and then identifies significant modules in specific subnetworks. During network inference, PARAGON run in three steps:  i. Graphlet-guided network (GGN) construction, ii. Propagation via  Personalized PageRank (PPR) algorithm, iii. Edge scoring and selection via flux calculation (Figure 1A). <font> </p> 
 
 
 <p align="center">    
