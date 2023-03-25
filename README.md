@@ -8,8 +8,15 @@
 
 <p align="center">    
 <img " src="Concept_Figs/Network_Inference.png" width="400">
-<p align="center">
-<p align="justify"><font-weight="normal"><font size=> <font-weight="bold">Figure 1:</font-weight> Conceptual view of network inference in PARAGON <p>
+<\p >
+                                                           
+<p align="justify"><font-weight="normal"><font size=3>Figure 1:</font-weight> Conceptual view of network inference in PARAGON <font></p>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                                                         
  
  
  
@@ -26,11 +33,41 @@
 
 
 
-<p align="justify" font-weight="normal"><font size=3>PARAGON goes beyond network inference by dividing the network into functional units. Community analysis module recruites the louvain community detection method based on network topology. Then, PARAGON can identify significant modules by appying hypergeometric test for a given prior knowledge such as biological processes, pathways. <font><p>     
+<p align="justify" font-weight="normal"><font size=3>PARAGON goes beyond network inference by dividing the network into functional units. Community analysis module recruites the louvain community detection method based on network topology. Then, PARAGON can identify significant modules by appying hypergeometric test for a given prior knowledge such as biological processes, pathways. </p>   
+                                       
 
-## Installation 
+                                    
+## Installation from GIT
+<p align="justify" font-weight="normal"><font size=3>
+pip install git+https://github.com/metunetlab/pyPARAGON.git
+
+                                       
+                                       
+                               
 <p align="justify" font-weight="normal"><font size=2>
-    
+## Installation after downloading in linux command prompt
+
+To get the last version of pyPARAGON, visit the GitHub repository: https://github.com/metunetlab/pyPARAGON
+
+<p align="justify" font-weight="normal"><font size=3>
+
+1. Create a virtual environment for pyPARAGON
+python3 -m venv pyPARAGONenv
+
+2. Activate the pyPARAGON Environment 
+source venv/bin/activate
+
+3. Install python package for in-house setup
+pip install wheel
+pip install setuptools
+
+4. Go to pyPARAGON folder, the folder including setup.py and run setup.py as using
+python setup.py bdist_wheel
+
+5. The wheel file should be stored in the "dist" folder that should be written in the step 4. run the file extended with "whl" as using
+pip install /path/to/wheelfile.whl 
+                                       
+                                       
 ## Citation <h2>      
     
 <p align="justify" font-weight="normal"><font size=1>
