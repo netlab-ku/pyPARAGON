@@ -52,17 +52,17 @@ pip install git+https://github.com/metunetlab/pyPARAGON.git
 
 1. Create a virtual environment for pyPARAGON
 
-python3 -m venv pyPARAGONenv
+#### python3 -m venv pyPARAGONenv
 
 
 2. Activate the pyPARAGON Environment 
 
-source venv/bin/activate
+#### source venv/bin/activate
 
 
 3. Install python package for in-house setup
 
-pip install wheel
+#### pip install wheel
 
 pip install setuptools
 
