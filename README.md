@@ -37,7 +37,9 @@ pyPARAGON allows researchers to precisely integrate omics data through a referen
 
 
 ## Installation from Git :
+
 <p align="justify" font-weight="normal"><font size=3>
+
 pip install git+https://github.com/metunetlab/pyPARAGON.git
 
                                        
@@ -45,23 +47,36 @@ pip install git+https://github.com/metunetlab/pyPARAGON.git
                                
 
 ## Installation in linux command prompt after downloading :
+
 <p align="justify" font-weight="normal"><font size=3>
 
 1. Create a virtual environment for pyPARAGON
+
 python3 -m venv pyPARAGONenv
 
+
 2. Activate the pyPARAGON Environment 
+
 source venv/bin/activate
 
+
 3. Install python package for in-house setup
+
 pip install wheel
+
 pip install setuptools
 
+
 4. Go to pyPARAGON folder, the folder including setup.py and run setup.py as using
+
 python setup.py bdist_wheel
 
+
 5. The wheel file should be stored in the "dist" folder that should be written in the step 4. run the file extended with "whl" as using
+
 pip install /path/to/wheelfile.whl 
+
+
 
 
 ## Citation
