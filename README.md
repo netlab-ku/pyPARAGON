@@ -46,7 +46,6 @@ pip install git+https://github.com/metunetlab/pyPARAGON.git
 
 ## Installation after downloading in linux command prompt
 <p align="justify" font-weight="normal"><font size=2>
-To get the last version of pyPARAGON, visit the GitHub repository: https://github.com/metunetlab/pyPARAGON
 
 <p align="justify" font-weight="normal"><font size=3>
 
