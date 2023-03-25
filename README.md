@@ -36,7 +36,7 @@ pyPARAGON allows researchers to precisely integrate omics data through a referen
 
 
 
-## Installation from GIT :
+## Installation from Git :
 <p align="justify" font-weight="normal"><font size=3>
 pip install git+https://github.com/metunetlab/pyPARAGON.git
 
