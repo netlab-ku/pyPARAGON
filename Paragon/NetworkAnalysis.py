@@ -170,9 +170,9 @@ class CommunityAnalysis(OverRepresentationAnalysis):
         self.all_hypergeometric_results=pd.DataFrame(columns=["Community_name"])
         
         for index in self.module_df.index:
-            Community=module.iloc[index]["Community"].split(";")
+            Community=self.module_df.iloc[index]["Community"].split(";")
             temp_test_result=self.hypergeometric_test(Community)
-            temp_test_result["Community_name"]=module.iloc[index]["Community_name"]
+            temp_test_result["Community_name"]=self.module_df.iloc[index]["Community_name"]
             self.all_hypergeometric_results=pd.concat([self.all_hypergeometric_results,temp_test_result],ignore_index=True)
                     
         return self.all_hypergeometric_results

@@ -55,10 +55,10 @@ class GraphletSelect():
     def get_selected_edge_list(self):
         return list(self.created_network.edges)
     
-    def get_get_graphlets_scores(self):
-        return self.selected_Graphlets_Scores
+#    def get_graphlets_scores(self):
+#        return self.selected_Graphlets_Scores
 
-    def write_created_network(self,file_name):
+    def write_guided_graphlet_network(self,file_name):
         DF=nx.to_pandas_edgelist(self.created_network)
         DF.to_csv(f'{file_name}.sif',sep="\t",index=False)
         return True
