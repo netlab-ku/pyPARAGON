@@ -2,37 +2,47 @@
 
 ## Overview  
 
-<p align="justify"><font-weight="normal"><font size=3> pyPARAGON (PAgeRAnk-flux on Graphlet-guided network for multi-Omic data integratioN) is a novel method that infers a context specific subnetwork from a given reference network, utilizing omic-hits as a seed node set and then identifies significant modules in specific subnetworks. During network inference, pyPARAGON run in three steps: 
+<p align="justify"><font-weight="normal"><font size=3> pyPARAGON (PAgeRAnk-flux on Graphlet-guided network for multi-Omic data integratioN) is a novel method that infers a context specific subnetwork from a given reference network, utilizing omic-hits as a seed node set and then identifies significant modules in specific subnetworks. During network inference, pyPARAGON run in three steps (Figure 1.A): 
 
  i. Graphlet-guided network (GGN) construction,
 
  ii. Propagation via  Personalized PageRank (PPR) algorithm, 
 
- iii. Edge scoring and selection via flux calculation (Figure 1A). <font> </p> 
+ iii. Edge scoring and selection via flux calculation. <font> </p> 
 
 
 
 <p align="center">    
-<img " src="Concept_Figs/Network_Inference.png" width="400">
+<img " src="Concept_Figs/Network_Inference_overall_and_GGN.png" width="400">
 <p align="center">
-<p align="justify"><font-weight="normal"><font size=> <font-weight="bold">Figure 1:</font-weight> Conceptual view of network inference in pyPARAGON <p>
+<p align="justify"><font-weight="normal"><font size=> <font-weight="bold">Figure 1:</font-weight> Conceptual view of network inference in pyPARAGON: ((A) The network inference module of pyPARAGON operates in three main steps: i.) GGN construction; ii.) Edge scoring with personalized PageRank flux calculation on a given reference network; iii.) Subnetwork inference using edge scores and GGN. (B) We investigated nine non-isomorphic graphlets (G0-G8) composed of 2, 3, and 4 nodes for building GGN. Except for G0, each graphlet includes initial nodes (red circles) and a hidden node (white circles) in one of the highest degrees of orbits. To uncover motifs, we counted the graphlets in 100 permuted networks that had the same initial node set. Using the z-test, we compared the targeted graphlet count in the reference and permuted networks (p < 0.05, z-score > 1.65). The union of significant graphlets constructs GGN.  <p>
  
  
  
-<p align="justify" font-weight="normal"><font size=3>Graphlet module of pyPARAGON identifies, an associated region of reference network through substantially frequent non-isomorphic graphlets composed of 2-, 3-, and 4-nodes. Each graphlet includes an intermediate node that is the most interacting nodes in the graphlet. pyPARAGON collects the frequent graphlet motifs into GGN. In this way, pyPARAGON shrinks the size of the network into GGN and eliminates highly connected nodes and their unrelated interactions. <font> <p>
+<p align="justify" font-weight="normal"><font size=3>Graphlet module of pyPARAGON identifies, an associated region of reference network through substantially frequent non-isomorphic graphlets composed of 2-, 3-, and 4-nodes (Figure 1.B). Each graphlet includes an intermediate node that is the most interacting nodes in the graphlet. pyPARAGON collects the frequent graphlet motifs into GGN. In this way, pyPARAGON shrinks the size of the network into GGN and eliminates highly connected nodes and their unrelated interactions. <font> <p>
 
-<p align="justify" font-weight="normal"><font size=3>Independent to the graphlet module, pyPARAGON propagates signals from omic-hits through the personalizaed PageRank algorithm in re-scoring all proteins in the reference (Figure 1B). Then, flux calculation weights each edge of the GGN, considering PageRank scores of nodes, confidence scores of edges and the number of node interactions. Finally, pyPARAGON infer the context specific network by selecting the highly scored edges (Figure 1B). <font> <p>
+
+
+<p align="justify" font-weight="normal"><font size=3>Independent to the graphlet module, pyPARAGON propagates signals from omic-hits through the personalizaed PageRank algorithm in re-scoring all proteins in the reference (Figure 2). Then, flux calculation weights each edge of the GGN, considering PageRank scores of nodes, confidence scores of edges and the number of node interactions. Finally, pyPARAGON infer the context specific network by selecting the highly scored edges. <font> <p>
+
+
+
+<p align="center"> 
+<img src="Concept_Figs/PRF_and_Edge_Selection.png" width="400">
+<p align="center"> 
+<p align="justify"><font-weight="normal"><font size=> <font-weight="bold">Figure 2:</font-weight> Edge Scoring and Selection in pyPARAGON: By random walking from weighted initial nodes in the reference network, the Personalized PageRank algorithm assigns a priority to each node. The computation of fluxes between interacting nodes scored edges in the reference. The highly weighted edges reported in GGN construct a subnetwork or specific network.  <p>
+
+
+
+<p align="justify" font-weight="normal"><font size=3>pyPARAGON goes beyond network inference by dividing the network into functional units. Community analysis module recruites the louvain community detection method based on network topology (Figure 3). Then, pyPARAGON can identify significant modules by appying hypergeometric test for a given prior knowledge such as biological processes, pathways. <font><p>     
 
 
 
 <p align="center"> 
 <img src="Concept_Figs/Community__Analysis.png" width="400">
 <p align="center"> 
-<p align="justify"><font-weight="normal"><font size=> <font-weight="bold">Figure 2:</font-weight> Conceptual view of community analysis in pyPARAGON <p>
+<p align="justify"><font-weight="normal"><font size=> <font-weight="bold">Figure 3:</font-weight> Conceptual view of community analysis in pyPARAGON: The network analysis module of pyPARAGON employs Louvain community detection methods, based on network topology, to divide the inferred network into functional units. The communities are evaluated using prior knowledge such as components of biological processes and pathways. The communities are tested with hypergeometric tests to identify significantly overrepresented annotations. This integration of annotations and inferred subnetworks provides patient stratification, survival analysis, and personalized medicine. <p>
 
-
-
-<p align="justify" font-weight="normal"><font size=3>pyPARAGON goes beyond network inference by dividing the network into functional units. Community analysis module recruites the louvain community detection method based on network topology (Figure 2). Then, pyPARAGON can identify significant modules by appying hypergeometric test for a given prior knowledge such as biological processes, pathways. <font><p>     
 
 pyPARAGON allows researchers to precisely integrate omics data through a reference network, composed of huge prior knowledge. Researchers may model topic of interest, such as diseases, drug trials in inferred context-specific networks. Additionally, independent to network inference module,  pyPARAGON determines the substantial communities of any network associated with the biological annotations for biological interpretations such as patient stratification, survival analysis and personalized medicine.
 
