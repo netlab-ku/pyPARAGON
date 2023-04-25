@@ -41,10 +41,10 @@
 <p align="center"> 
 <img src="Concept_Figs/Community__Analysis.png" width="400">
 <p/> 
-<p align="justify"><strong>Figure 3:Conceptual view of community analysis in pyPARAGON:</strong> The network analysis module of pyPARAGON employs Louvain community detection methods, based on network topology, to divide the inferred network into functional units. The communities are evaluated using prior knowledge such as components of biological processes and pathways. The communities are tested with hypergeometric tests to identify significantly overrepresented annotations. This integration of annotations and inferred subnetworks provides patient stratification, survival analysis, and personalized medicine. <p>
+<p align="justify"><strong>Figure 3:Conceptual view of community analysis in pyPARAGON:</strong> The network analysis module of pyPARAGON employs Louvain community detection methods, based on network topology, to divide the inferred network into functional units. The communities are evaluated using prior knowledge such as components of biological processes and pathways. The communities are tested with hypergeometric tests to identify significantly overrepresented annotations. This integration of annotations and inferred subnetworks provides patient stratification, survival analysis, and personalized medicine. </p>
 
 
-pyPARAGON allows researchers to precisely integrate omics data through a reference network, composed of huge prior knowledge. Researchers may model topic of interest, such as diseases, drug trials in inferred context-specific networks. Additionally, independent to network inference module,  pyPARAGON determines the substantial communities of any network associated with the biological annotations for biological interpretations such as patient stratification, survival analysis and personalized medicine.
+<p align="justify"> pyPARAGON allows researchers to precisely integrate omics data through a reference network, composed of huge prior knowledge. Researchers may model topic of interest, such as diseases, drug trials in inferred context-specific networks. Additionally, independent to network inference module,  pyPARAGON determines the substantial communities of any network associated with the biological annotations for biological interpretations such as patient stratification, survival analysis and personalized medicine. </p>
 
 
 
