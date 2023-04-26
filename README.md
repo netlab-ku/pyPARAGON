@@ -6,16 +6,16 @@
 
  i. Graphlet-guided network (GGN) construction,
 
- ii. Propagation via  Personalized PageRank (PPR) algorithm, 
+ ii. Propagation and edge scoring via  the Personalized PageRank (PPR) algorithm and flux calculation, 
 
- iii. Edge scoring and selection via flux calculation. <font> </p> 
+ iii. Subnetwork reconstruction with highly scored edges on GGN. <font> </p> 
 
 
 
 <p align="center">    
 <img " src="Concept_Figs/Network_Inference_overall_and_GGN.png" width="400">
 </p>
-<p align="justify"><sub><sup><strong>Figure 1:Conceptual view of network inference in pyPARAGON: (A)</strong> The network inference module of pyPARAGON operates in three main steps: i.) GGN construction; ii.) Edge scoring with personalized PageRank flux calculation on a given reference network; iii.) Subnetwork inference using edge scores and GGN. <strong>(B)</strong> We investigated nine non-isomorphic graphlets (G<sub>0</sub>-G<sub>8</sub>) composed of 2, 3, and 4 nodes for building GGN. Except for G<sub>0</sub>, each graphlet includes initial nodes (red circles) and a hidden node (white circles) in one of the highest degrees of orbits. To uncover motifs, we counted the graphlets in 100 permuted networks that had the same initial node set. Using the z-test, we compared the targeted graphlet count in the reference and permuted networks (p < 0.05, z-score > 1.65). The union of significant graphlets constructs GGN. </sub></sup> <p>
+<p align="justify"><sub><sup><strong>Figure 1:Conceptual view of network inference in pyPARAGON: (A)</strong> The network inference module of pyPARAGON operates in three main steps: i.) GGN construction in red; ii.) Propagation and edge scoring via  the Personalized PageRank (PPR) algorithm and flux calculation in yellow; iii.) Subnetwork reconstruction with highly scored edges on GGN in green. <strong>(B)</strong> We investigated nine non-isomorphic graphlets (G<sub>0</sub>-G<sub>8</sub>) composed of 2, 3, and 4 nodes for building GGN. Except for G<sub>0</sub>, each graphlet includes initial nodes (red circles) and a hidden node (white circles) in one of the highest degrees of orbits. To uncover motifs, we counted the graphlets in 100 permuted networks that had the same initial node set. Using the z-test, we compared the targeted graphlet count in the reference and permuted networks (p < 0.05, z-score > 1.65). The union of significant graphlets constructs GGN. </sub></sup> <p>
  
  
  
