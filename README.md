@@ -23,7 +23,7 @@
 
 
 
-<p align="justify" font-weight="normal">Independent to the graphlet module, pyPARAGON propagates signals from omic-hits through the personalizaed PageRank algorithm in re-scoring all proteins in the reference (Figure 2). Then, flux calculation weights each edge of the GGN, considering PageRank scores of nodes, confidence scores of edges and the number of node interactions. Finally, pyPARAGON infer the context specific network by selecting the highly scored edges. </font> </p>
+<p align="justify" font-weight="normal">Independent to the graphlet module, pyPARAGON propagates signals from omic-hits through the personalizaed PageRank algorithm in re-scoring all proteins in the reference (Figure 2). Then, flux calculation weights each edge of the GGN, considering PageRank scores of nodes, confidence scores of edges and the number of node interactions. Finally, pyPARAGON infers the context specific network by selecting the highly scored edges. </font> </p>
 
 
 
