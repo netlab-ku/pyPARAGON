@@ -34,7 +34,7 @@
 
 
 
-<p align="justify" font-weight="normal"><font size=3>pyPARAGON goes beyond network inference by dividing the network into functional units. Community analysis module recruites the louvain community detection method based on network topology (Figure 3). Then, pyPARAGON can identify significant modules by appying hypergeometric test for a given prior knowledge such as biological processes, pathways. </font></p>     
+<p align="justify" font-weight="normal"><font size=3>pyPARAGON goes beyond network inference by dividing the network into functional units. The community analysis module recruits the Louvain community detection method based on network topology (Figure 3). Then, pyPARAGON can identify significant modules by applying a hypergeometric test to a given prior knowledge, such as biological processes, pathways. </font></p>     
 
 
 
