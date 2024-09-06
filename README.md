@@ -93,5 +93,5 @@ pip install /path/to/wheelfile.whl
 
 ## Citation
 <p align="justify" font-weight="normal"><font size=3>
-Arici, M.K., Tuncbag, N. Discovering Hidden Connections in Omics Data: an Integrative Modeling Approach for Unveiling Cancer Networks, 2023, in submission
+M. Kaan Arici*, and Nurcan Tuncbag#, Unveiling hidden connections in omics data via pyPARAGON: an integrative hybrid approach for disease network construction, Briefings in Bioinformatics, 25, 5, September 2024, bbae399, https://doi.org/10.1093/bib/bbae399
 
