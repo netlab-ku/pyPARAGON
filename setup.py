@@ -6,7 +6,7 @@ setup(
     description='Network Inference Lib',
     author='M Kaan ARICI, Nurcan Tuncbag',
     license='MIT',
-    url='https://github.com/metunetlab/Paragon',
+    url='https://github.com/netlab-ku/pyPARAGON',
     python_requires='>=3.6',
     install_requires=[
             "numpy==1.19.5",
